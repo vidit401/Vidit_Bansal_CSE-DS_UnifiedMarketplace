@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333; /* Added default text color */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Added spacing for better aesthetics */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Search Bar */
+form {
+    margin: 20px auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Added gap for better spacing */
+}
+
+input[type="text"] {
+    flex: 1; /* Ensures input takes up available space */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px; /* Improved readability */
+    transition: border-color 0.3s ease; /* Smooth focus effect */
+}
+
+input[type="text"]:focus {
+    border-color: #ff6600; /* Highlight input on focus */
+    outline: none;
+}
+
+button {
+    padding: 10px 20px; /* Adjusted padding for better click area */
+    border: none;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px; /* Consistent font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* Product Display */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Added gap for consistent spacing */
+    padding: 20px; /* Added padding for better layout */
+}
+
+.product {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px; /* Increased padding for better spacing */
+    margin: 10px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image Styling */
+.product img {
+    width: 120px; /* Slightly larger for better visibility */
+    height: 120px;
+    object-fit: contain;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Store Information */
+.store {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Increased gap for better spacing */
+    margin-top: 10px; /* Added spacing from other elements */
+}
+
+.store img {
+    width: 20px; /* Slightly larger for better visibility */
+    height: 20px;
+    border-radius: 50%; /* Circular icons for better aesthetics */
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Added gap for better spacing */
+}
+
+.pagination button {
+    padding: 10px 15px; /* Adjusted padding for better click area */
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* Consistent font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.pagination button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stack products on smaller screens */
+        align-items: center;
+    }
+
+    .product {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    form {
+        flex-direction: column; /* Stack input and button */
+        gap: 10px;
+    }
+
+    input[type="text"], button {
+        width: 100%; /* Full width for smaller screens */
+    }
+}

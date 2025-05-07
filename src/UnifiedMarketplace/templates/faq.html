@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+
+{% block title %}Frequently Asked Questions - Unified Marketplace{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="text-center mb-5">Frequently Asked Questions</h1>
+            
+            <div class="text-center mb-5">
+                <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b" alt="Customer Support" class="img-fluid rounded shadow" style="max-height: 300px;">
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <!-- General FAQs -->
+                <div class="mb-4">
+                    <h3 class="border-bottom pb-2 mb-3">General Questions</h3>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Unified Marketplace?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Unified Marketplace is a product search and comparison platform that helps you find products across multiple online retailers in one place. We aggregate product listings from major stores like Amazon, Walmart, Best Buy, and many others, allowing you to compare prices and find the best deals without visiting multiple websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Is Unified Marketplace free to use?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Yes, Unified Marketplace is completely free to use. We earn commissions from retailers when you make purchases after clicking through from our site, which helps support our service. There are no hidden fees or charges for using our platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Which stores are included in your search results?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We search across major retailers including Amazon, Walmart, Best Buy, Target, Newegg, eBay, Home Depot, and many others. You can also filter results to show products from specific stores by using the "Stores" filter in the sidebar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Searching & Filtering FAQs -->
+                <div class="mb-4">
+                    <h3 class="border-bottom pb-2 mb-3">Searching & Filtering</h3>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How do I search for products?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>To search for products, simply enter keywords in the search box on the home page or in the sidebar. You can enter product names, brands, model numbers, or general descriptions. After entering your search terms, click the "Apply Filters" button to see results.</p>
+                                <p>For more specific searches, use the filters in the sidebar to narrow results by price range, condition, store, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Why do I need to click "Apply Filters" instead of the filters applying automatically?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We use the "Apply Filters" button to help reduce unnecessary API calls and provide a better user experience. This allows you to adjust multiple filters at once before submitting a new search, rather than triggering a new search with each filter change.</p>
+                                <p>This approach also helps us maintain our service performance and stay within our API usage limits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Can I sort the search results?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Yes, you can sort search results using the "Sort By" dropdown in the filters section. Available sorting options include:</p>
+                                <ul>
+                                    <li><strong>Best Match:</strong> Results ordered by relevance to your search terms</li>
+                                    <li><strong>Lowest Price:</strong> Products sorted from lowest to highest price</li>
+                                    <li><strong>Highest Price:</strong> Products sorted from highest to lowest price</li>
+                                </ul>
+                                <p>After selecting a sort option, click "Apply Filters" to update the results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Account FAQs -->
+                <div class="mb-4">
+                    <h3 class="border-bottom pb-2 mb-3">Account & Features</h3>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Do I need to create an account to use Unified Marketplace?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>No, you don't need an account to search for products and compare prices. However, creating a free account gives you additional benefits:</p>
+                                <ul>
+                                    <li>Save search history to quickly repeat previous searches</li>
+                                    <li>Save favorite products to track price changes</li>
+                                    <li>Personalized product recommendations based on your searches</li>
+                                    <li>Faster checkout with saved shopping preferences</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                What does the "Buy Now" button do?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>When you click the "Buy Now" button on a product, you'll be redirected to the product page on the retailer's website. Unified Marketplace doesn't sell products directly - we help you find products and then connect you with the retailer to complete your purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical FAQs -->
+                <div>
+                    <h3 class="border-bottom pb-2 mb-3">Technical Questions</h3>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Are my search results cached? 
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Yes, we cache search results to improve performance and reduce API calls. When you perform a search, the results are cached both on our server and in your browser. If you revisit the same search within a short period, you'll see the cached results instead of performing a new API call.</p>
+                                <p>This helps our application run more efficiently and ensures you get faster results. Cache typically expires after 24 hours to ensure you still get up-to-date information.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                How accurate are the prices shown?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We strive to display accurate and up-to-date pricing information, but prices can change frequently. The prices shown are retrieved from retailer APIs at the time of your search (or from our cache if you're viewing cached results).</p>
+                                <p>Always verify the final price on the retailer's website before making a purchase, as prices may have changed since the data was retrieved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                What should I do if I encounter an error?
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>If you encounter an error while using Unified Marketplace, here are some steps you can take:</p>
+                                <ol>
+                                    <li>Refresh the page and try again</li>
+                                    <li>Clear your browser cache and cookies</li>
+                                    <li>Try a different browser</li>
+                                    <li>Contact our support team via the Contact page</li>
+                                </ol>
+                                <p>When reporting an error, please include details about what you were doing when the error occurred, your browser and device information, and any error messages you saw.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <p class="lead">Still have questions?</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
